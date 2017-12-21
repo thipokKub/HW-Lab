@@ -1,0 +1,30 @@
+{
+  "rules": {
+    "users": {
+      "$userId": {
+        ".read": "auth != null && auth.uid == $userId",
+        ".write": "auth != null && auth.uid == $userId",
+        "meta": {
+          ".read": true,
+        },
+        "private": {
+          "location": {
+            ".read": true
+          }
+        }
+      }
+    },
+    "machines": {
+      "$machineId": {
+        ".read": "auth != null && root.child('users').child(auth.uid).child('private').child('machines').child($machineId).val() !== null",
+        ".write": "auth != null && root.child('users').child(auth.uid).child('private').child('machines').child($machineId).val() !== null",
+        "history": {
+          ".write": true
+        },
+        "owner": {
+          ".read": true
+        }
+      }
+    }
+  }
+}

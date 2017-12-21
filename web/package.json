@@ -1,0 +1,47 @@
+{
+  "name": "next-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "engines": {
+    "node": "8.9.3"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "babel-plugin-module-resolver": "2.5.0",
+    "babel-plugin-wrap-in-js": "^1.1.0",
+    "firebase": "^4.8.1",
+    "glob": "7.1.1",
+    "isomorphic-style-loader": "^4.0.0",
+    "moment": "^2.19.2",
+    "next": "^4.1.4",
+    "next-redux-wrapper": "^1.3.4",
+    "nprogress": "^0.2.0",
+    "react": "^16.1.1",
+    "react-day-picker": "^6.2.1",
+    "react-dom": "^16.1.1",
+    "react-geolocated": "^2.2.1",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0",
+    "styled-components": "^2.2.3",
+    "now": "^3.1.0",
+    "node-sass": "^4.4.0",
+    "normalize.css": "5.0.0",
+    "postcss-easy-import": "2.0.0",
+    "postcss-loader": "1.3.3",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^4.1.1",
+    "autoprefixer": "6.7.6"
+  },
+  "scripts": {
+    "start": "next start -p $PORT",
+    "build": "next build",
+    "deploy": "next start",
+    "postinstall": "next build",
+    "runtest": "next"
+  },
+  "description": "## Gettting start --- just use `npm` or `yarn` ``` npm install ``` or ``` yarn install ```",
+  "author": ""
+}
